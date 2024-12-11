@@ -1,0 +1,383 @@
+.mainPageBtn{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn1{
+    width: 13vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn2{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn3{
+    width: 5vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn4{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn5{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn6{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageBtn6P{
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mainPageBtn0{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.mainPageJpg{
+    width: 75vw;
+    height: 75vh;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.MainPageP{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.mainPageObogrevatel{
+    width: 198px;
+    height: 374px;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageItems{
+    width: 198px;
+    height: 390px;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageItemsP{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.mainPageImgItems{
+    width: 12vw;
+    height: 20vh;
+    margin-top: 10px;
+}
+.mainPageImgObogrevatel{
+    width: 13vw;
+    height: 19vh;
+    margin-top: 10px;
+}
+.mainPageObogrevately{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.mainPageP1Obogrevatel{
+    font-size: 30px;
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.mainPagePObogrevatel{
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.MainPageBtnText{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mainPageBtnObogrevatel{
+    width: 182px;
+    height: 32px;
+    border: none;
+    background-color: rgb(255, 149, 0);
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+.mainPageBtnsParent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mainPageButtonsCh{
+    width: 133px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh3{
+    width: 279px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh4{
+    width: 196px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh5{
+    width: 222px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsP{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.mainPageDivs0{
+    width: 170px;
+    height: 160px;
+    background-color: white;
+}
+.mainPageDivs{
+    display: grid;
+    grid-template-columns: repeat(7, 175px);
+    gap: 10px;
+    margin-left: 40px;
+    margin-top: 45px;
+}
+.mainPageImages0{
+    width: 402px;
+    height: 216px;
+}
+.mainPageImages{
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.mainPageButtonsCh{
+    width: 165px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh2{
+    width: 210px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh3{
+    width: 279px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh4{
+    width: 196px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.mainPageButtonsCh5{
+    width: 222px;
+    height: 48px;
+    border-radius: 25px;
+    color: gray;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.smartphonesPageMaterialParent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.mainPageBtnChat{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: white;
+    color: orange;
+    position: fixed;
+    right: 2%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.chatIcon{
+    width: 30px;
+    height: 30px;
+    margin-left: 14px;
+}
+.mainPageDChat1{
+    display: flex;
+    flex-direction: column;
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
+}
+.mainPageDChat{
+    width: 11vw;
+    height: 8vh;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px gray;
+    font-size: 17px;
+    text-align: center;
+}
+.mainPageDChat2{
+    display: none;
+}
+.mainPageDChatP2{
+    border: none;
+}
+.mainPageDChatP3{
+    display: none;
+}
+.mainPageDChatP{
+    margin-top: 10px;
+}
+.mainPageDChatP0{
+    color: gray;
+}
+.mainPageDChat0x{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px gray;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+}
+.mainPageLinkChat{
+    text-decoration: none;
+    color: black;
+}
+.mainPageModal0{
+    display: none;
+    width: 23vw;
+    height: 75vh;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 20px;
+}
+.mainPageModal{
+    width: 23vw;
+    height: 75vh;
+    box-shadow: 5px 5px 5px gray;
+    background-color: white;
+    border-radius: 20px;
+}

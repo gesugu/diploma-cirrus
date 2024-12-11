@@ -1,0 +1,118 @@
+.headerPage{
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.headerPageParent{
+    width: 100vw;
+}
+.h2Parent{
+    display: flex;
+    flex-direction: column;
+}
+.h2Parent2{
+    display: flex;
+    flex-direction: column;
+}
+.h2Parent3{
+    display: flex;
+    flex-direction: column;
+}
+.inputHeader{
+    width: 33vw;
+    height: 6vh;
+    border-radius: 5px;
+    font-size: 17px;
+    border: 1px solid rgb(185, 184, 184);
+}
+.h2Icons{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.btnHeader{
+    width: 9vw;
+    height: 6vh;
+    background-color: rgb(255, 115, 0);
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.h2Header{
+    font-size: 24px;
+    text-decoration: none;
+}
+.headerPage2{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-top: 16px;
+}
+.headerPage3{
+    gap: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+.headerPage3Btn{
+    width: 12vw;
+    height: 5vh;
+    background-color: rgb(0, 157, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.headerPage3P{
+    font-size: 18px;
+    margin-top: 8px;
+}
+.btnHeader3{
+    width: 4vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 157, 255);
+    background-color: white;
+    font-size: 15px;
+}
+.btnPHeader{
+    color: white;
+    text-decoration: none;
+}
+.notVisibleModal{
+    width: 55vw;
+    height: 60vh;
+    background-color: white;
+    border: none;
+}
+.visibleModal{
+    width: 55vw;
+    height: 60vh;
+    background-color: white;
+    border: none;
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.headerPageLinkP{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.modalContentP{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}

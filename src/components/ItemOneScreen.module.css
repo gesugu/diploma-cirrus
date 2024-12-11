@@ -1,0 +1,243 @@
+.mainPageBtn0{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.mainPageBtn{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn1{
+    width: 13vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn2{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn3{
+    width: 5vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn4{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn5{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn6{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageBtn6P{
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.itemInfoPage1{
+    width: 856px;
+    height: 542px;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    gap: 70px;
+    border-radius: 10px;
+}
+.itemInfoPageImg{
+    width: 300px;
+    height: 340px;
+    margin-top: 20px;
+}
+.itemInfoPageP{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.itemInfoPage0{
+    display: flex;
+    flex-direction: column;
+}
+.itemInfoPage0P2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 18px;
+}
+.itemInfoPage0P3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 18px;
+}
+.itemInfoPageImgSwipe{
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+}
+.itemInfoPageSwiperImg{
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border: 2px solid gray;
+}
+.itemInfoPageSwiperImg:hover{
+    border: 2px solid orange;
+}
+.itemInfoPageSwiperP{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.itemInfoPageSwiperPImg{
+    display: flex;
+    gap: 50px;
+}
+.itemInfoPageD1{
+    width: 360px;
+    height: 525px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    position: fixed;
+    right: 0;
+    border-radius: 10px;
+}
+.itemInfoPageDP1{
+    display: flex;
+    justify-content: space-between;
+}
+.itemInfoPageD1Price{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.itemInfoPageD1P{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.itemInfoPageD1Btn{
+    width: 326px;
+    height: 48px;
+    background-color: rgb(0, 157, 255);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+.itemInfoPageDi1{
+    width: 274px;
+    height: 52px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.itemInfoPageDi1P{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.itemInfoPageDi0{
+    display: flex;
+    gap: 15px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.itemInfoPagePG{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.itemInfoPageCh{
+    width: 856px;
+    height: 400px;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.itemInfoPagePG0{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.itemInfoPageR{
+    width: 856px;
+    height: 1100px;
+    background-color: white;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.itemInfoPageRP{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+.itemInfoPageRP0{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+}
+.itemInfoPageRHr{
+    width: 825px;
+    text-align: center;
+}
+.itemInfoPageRP1{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.itemInfoPageRP2{
+    margin-left: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}

@@ -1,0 +1,294 @@
+.korzinaPageP{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.korzinaPageD{
+    width: 1216px;
+    height: 525px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.korzinaPageDImg{
+    width: 254px;
+    height: 238px;
+    border-radius: 120px;
+}
+.korzinaPageDBtn{
+    width: 386px;
+    height: 40px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 7px;
+    border: none;
+}
+.korzinaPageDP{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.korzinaPageDP0{
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.korzinaPageDiP{
+    font-size: 27px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.mainPageItems{
+    width: 198px;
+    height: 390px;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageItemsP{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.mainPageImgItems{
+    width: 12vw;
+    height: 20vh;
+    margin-top: 10px;
+}
+.mainPageP1Obogrevatel{
+    font-size: 30px;
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.mainPagePObogrevatel{
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.mainPageBtnsParent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.mainPageBtnObogrevatel{
+    width: 182px;
+    height: 32px;
+    border: none;
+    background-color: rgb(255, 149, 0);
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+.smartphonesPageMaterialParent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.KorzinaPageDd{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.korzinaPageDParent{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.651);
+    border: none;
+    border-radius: 10px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+.comparePageT{
+    width: 30px;
+    height: 30px;
+}
+.comparePageHT{
+    display: flex;
+    gap: 15px;
+}
+.KorzinaPageDT{
+    display: flex;
+    gap: 22px;
+}
+.comparePageD{
+    width: 1232px;
+    height: 130px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.comparePageDP{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.korzinaPageImg{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.korzinaPageDHP{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.korzinaPageBtn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 149, 0);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.korzinaPageD2{
+    width: 400px;
+    height: 435px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+.korzinaPageDParents{
+    display: flex;
+    flex-direction: column;
+}
+.korzinaPageD2Parent{
+    display: grid;
+    grid-template-columns: repeat(4, 365px);
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 1236px;
+    height: 220px;
+    border-radius: 20px;
+    margin-left: 30px;
+    position: fixed;
+}
+.comparePage2{
+    width: 1236px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background-color: white;
+}
+.comparePage3D{
+    display: flex;
+    gap: 10px;
+}
+.comparePagePP{
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.mainPageBtn{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn1{
+    width: 13vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn2{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn3{
+    width: 5vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn4{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn5{
+    width: 11vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainPageBtn6{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.mainPageBtn6P{
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mainPageBtn0{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.korzinaPageD{
+    width: 1216px;
+    height: 525px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+}
