@@ -15,6 +15,7 @@ import chat from "../icons/chat.svg"
 import ChatHistory from "./ChatHistory";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import MyLoader2 from "../components/UI/loader2/MyLoader2";
+import send from "../icons/send.svg"
 
 const MainPage = () => {
     const dispatch = useDispatch();
@@ -62,9 +63,10 @@ const MainPage = () => {
     systemInstruction: `you are a highly specialized specialist consultant on technology and other electronic goods. 
 you help users tell and choose the ideal equipment for them, providing detailed, structured, and professional advice. 
 Your task includes:
-1. Analyzing the user's preferences, price limit, and purpose of purchase.
-2. Recommending suitable electronic device and giving them a device that is on the lists of havings.
-3. Explaining why this device is suitable for the user.
+1. Politely greet a user with one sentence and ask which language they would like to go with, kazakh or russian, then speak with them with a language they prefer.
+2. Analyzing the user's preferences, price limit, and purpose of purchase.
+3. Recommending suitable electronic device and giving them a device that is on the lists of havings.
+4. Explaining why this device is suitable for the user.
 
 Please respond professionally and visually format the output in Markdown for a better user experience.`,
   });
@@ -78,11 +80,9 @@ Please respond professionally and visually format the output in Markdown for a b
 
     setIsLoading(true);
     try {
-      // Генерация ответа от модели
       const result = await model.generateContent(userInput);
       const response = await result.response;
 
-      // Обновление истории чата
       setChatHistory([
         ...chatHistory,
         { type: "user", message: userInput },
@@ -108,6 +108,16 @@ Please respond professionally and visually format the output in Markdown for a b
     setChatHistory([]);
   };
 
+  const today = new Date()
+  const day = today.getDay()+1
+  const month = today.getMonth()+1
+//   const getMonth = () => {
+//     const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+//     if(month==1){
+//         return
+//     }
+//   }
+
     async function getItems() {
         const items = await PostService.getAll()
         
@@ -120,7 +130,7 @@ Please respond professionally and visually format the output in Markdown for a b
       getItems()
     }, [])
     return (
-        <div onClick={() => toggleVisible()} className={isVisible? classes.mainPageToggle : classes.mainPageToggle}>
+        <div>
             <div className={classes.mainPageBtn0}>
             <button className={classes.mainPageBtn}>Акции</button>
             <button className={classes.mainPageBtn1}>🔥 TECHNO Распродажа</button>
@@ -133,13 +143,24 @@ Please respond professionally and visually format the output in Markdown for a b
             <img className={classes.mainPageJpg} src={technodom} alt={technodom} />
             <div className={classes.mainPageDChat1}>
             <div className={classes.mainPageDChat0x} onClick={() => setIsVisible(!isVisible)}>x</div>
-            <Link className={classes.mainPageLinkChat} to="/chat">
-            <div className={isVisible ? classes.mainPageDChat2 : classes.mainPageDChat}>
+            <div className={isVisible ? classes.mainPageDChat2 : classes.mainPageDChat} onClick={() => setIsVisible(!isVisible)}>
             <p className={isVisible ? classes.mainPageDChatP2 : classes.mainPageDChatP0}>Техно-бот</p>
             <p className={isVisible ? classes.mainPageDChatP3 : classes.mainPageDChatP}>Теперь еще удобнее!</p>
             </div>
-            </Link>
-            <div className={isVisible ? classes.mainPageModal : classes.mainPageModel0}></div>
+            <div className={isVisible ? classes.mainPageModal : classes.mainPageModel0}>
+            <div className={isVisible ? classes.mainPageChatModal : classes.mainPageChatModal0}>
+            <div className={classes.mainPageChatHeader}>Начато {day} {month}</div>
+            {isLoading ? (
+            <MyLoader2 />
+             ) : (
+            <ChatHistory chatHistory={chatHistory} />
+             )}
+            <input className={classes.mainPageChatInput} type="text" placeholder="Введите сообщение" value={userInput} onChange={handleUserInput} onKeyDown={handleKeyPress}/>
+            <img src={send} alt={send} className={classes.mainPageChatImg} onClick={sendMessage}></img>
+            {/* <button className={classes.mainPageChatBtn} onClick={sendMessage}>Send</button>
+            <button className={classes.mainPageChatBtn0} onClick={clearChat}>Clear</button> */}
+            </div>
+            </div>
             <button className={classes.mainPageBtnChat} onClick={() => setIsVisible(!isVisible)}>
             <img src={chat} alt={chat} className={classes.chatIcon} />
             </button>

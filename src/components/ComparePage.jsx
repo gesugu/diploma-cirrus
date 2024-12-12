@@ -76,11 +76,17 @@ const ComparePage = () => {
                         </div>
                     </div>
                     <div className={classes.comparePage3D}>
-                    <div className={classes.comparePage2}>Бонусы</div>
+                    {/* <div className={classes.comparePage2}>Бонусы</div> */}
                     <div className={classes.comparePage2D}>-</div>
+                    <div className={classes.comparePage3DP}>{item.description2}</div>
                     </div>
                 </div>
             ))}
+        </div>
+        <div className={classes.comparePage2DPP}>
+        <div className={classes.comparePageDP2}>Бонусы</div>
+        <p className={classes.comparePageDP3}>Основные характеристики</p>
+        <div className={classes.comparePageDP2}>Особенности</div>
         </div>
         </div>
     ) : (

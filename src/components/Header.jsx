@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import classes from './Header.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchProductAction } from '../store/productReducer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import MyLoader2 from "../components/UI/loader2/MyLoader2"
+import basket from "../icons/basket.svg"
+import scales from "../icons/scales.svg"
+import cirrus2 from "../icons/cirrus2.jpg"
+import heart from "../icons/heart.svg"
 
 const Header = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const items = useSelector((state) => state.productReducer.items);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(true)
@@ -16,6 +21,10 @@ const Header = () => {
   const toggleVisible = () => {
     setIsVisible(!isVisible);
   };
+
+  const goMain = () => {
+    navigate('/')
+  }
 
   const searchItems = (input) => {
     setInput(input);
@@ -38,7 +47,9 @@ const Header = () => {
           <button className={classes.btnHeader3}>Eng</button>
         </div>
         <div className={classes.headerPage2}>
-          <h2 className={classes.h2Header}><Link className={classes.h2Header} to='/'>Все делаем с любовью</Link></h2>
+        <div className={classes.h2Parent3Img}>
+          <img className={classes.headerPage2Img} onClick={() => goMain()} src={cirrus2} alt={cirrus2}></img>
+          </div>
           <button className={classes.btnHeader}>
             <Link className={classes.btnPHeader} to="/katalog">
               Каталог
@@ -52,7 +63,7 @@ const Header = () => {
             placeholder="Я хочу найти"
           />
           <div className={classes.h2Parent}>
-            <h2 className="material-icons">favorite</h2>
+          <img className={classes.h2HeaderImg} src={heart} alt={heart}></img>
             <h2>
               <Link className={classes.h2Icons} to="/favorites">
                 Избранное
@@ -60,7 +71,7 @@ const Header = () => {
             </h2>
           </div>
           <div className={classes.h2Parent2}>
-            <h2 className="material-icons">scale</h2>
+          <img className={classes.h2HeaderImg} src={scales} alt={scales}></img>
             <h2>
               <Link className={classes.h2Icons} to="/compare">
                 Сравнить
@@ -68,7 +79,7 @@ const Header = () => {
             </h2>
           </div>
           <div className={classes.h2Parent3}>
-            <h2 className="material-icons">download</h2>
+            <img className={classes.h2HeaderImg} src={basket} alt={basket}></img>
             <h2>
               <Link className={classes.h2Icons} to="/korzina">
                 Корзина

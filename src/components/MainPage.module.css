@@ -381,3 +381,46 @@
     background-color: white;
     border-radius: 20px;
 }
+.mainPageChatModal0{
+    display: none;
+}
+.mainPageChatHeader{
+    width: 23vw;
+    height: 6vh;
+    background-color: rgb(226, 225, 225);
+    border-radius: 3px;
+}
+
+
+.mainPageChatInput {
+    width: 17vw;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 149, 0);
+    margin-right: 10px;
+    position: fixed;
+    bottom: 11%;
+    right: 2%;
+  }
+  
+  .mainPageChatBtn, .mainPageChatBtn0 {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .mainPageChatImg{
+    width: 3vw;
+    height: 4vh;
+    bottom: 12%;
+    right: 3%;
+    position: fixed;
+  }
+  /* .mainPageChatInputImgP{
+    display: flex;
+  } */

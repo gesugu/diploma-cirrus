@@ -184,7 +184,7 @@
     height: 220px;
     border-radius: 20px;
     margin-left: 30px;
-    position: fixed;
+    /* position: fixed; */
 }
 .comparePage2{
     width: 1236px;
@@ -193,16 +193,44 @@
     margin-left: 30px;
     background-color: white;
 }
+.comparePageDP2{
+    width: 216px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.comparePage2D{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.comparePage3DP{
+    background-color: white;
+    font-size: 20px;
+}
+.comparePageDP3{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.comparePage2DPP{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 250px;
+}
 .comparePage4{
     width: 1236px;
     height: 50px;
     border-radius: 20px;
     margin-left: 30px;
     background-color: white;
-}
-.comparePage3D{
-    display: flex;
-    gap: 10px;
 }
 .comparePagePP{
     margin-left: 50px;

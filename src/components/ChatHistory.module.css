@@ -1,83 +1,48 @@
-/* .chat-history-container { 
-    padding: 15px; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 12px; /* Increase the gap between messages */ 
-  
-   
-  /* .message { 
-    padding: 12px; 
-    margin-bottom: 10px; 
-    border-radius: 10px; 
-    line-height: 1.5; 
-    font-size: 16px; 
-    max-width: 70%; 
-    word-wrap: break-word; 
-    transition: all 0.3s ease-in-out; 
-    align-self: center; 
-    font-family: "Quicksand", sans-serif;  
-    font-optical-sizing: auto;  
-    font-weight: weight; 
-    font-style: normal; 
-    margin-left: 20px; 
-  } 
-   
-  .user-message { 
-    background-color: #007bff; 
-    color: white; 
-    align-self: flex-end; 
-    animation: fadeIn 0.5s ease-out; 
-  } 
-   
-  .bot-message { 
-    background-color: #e5e5ea; 
-    color: black; 
-    align-self: flex-start; 
-    animation: fadeIn 0.5s ease-out; 
-  } 
-   
-  @keyframes fadeIn { 
-    0% { 
-      opacity: 0; 
-      transform: translateY(10px); 
-    } 
-    100% { 
-      opacity: 1; 
-      transform: translateY(0); 
-    } 
-  }
-
-
-  .message {
-    margin: 10px 0;
+.chatHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 400px;
     padding: 10px;
-    border-radius: 5px;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
   }
   
-  .user-message {
-    background-color: #e0f7fa;
-    text-align: right;
+  .userMessage {
+    position: fixed;
+    right: 3%;
+    background-color: rgb(255, 149, 0); 
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .bot-message {
-    background-color: #e8f5e9;
-    text-align: left;
+  .botMessage {
+    align-self: flex-start;
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .chatHistoryImgD{
+    display: flex;
+    gap: 10px;
   }
   
-  .bot-message p {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    color: #2e7d32;
-  }
   
-  .bot-message h3 {
-    font-size: 18px;
-    color: #1b5e20;
+  .chatControls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
   }
-  
-  .bot-message code {
-    background-color: #f1f8e9;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: "Courier New", monospace;
-  } */ 
+  .chatHistoryImg{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 10px;
+  }
