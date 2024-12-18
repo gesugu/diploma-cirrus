@@ -17,6 +17,10 @@ const FavoritesPage = () => {
         console.log('success', item_id)
     }
 
+    const goToOneScreen = (item_id) => {
+        navigate(`/item2/${item_id}`)
+    }
+
     const removeItem = (id) => {
         dispatch(removeItemAction2(id))
     }
@@ -55,10 +59,10 @@ const FavoritesPage = () => {
             {selectItem.map((item) => (
                 <div key={item.id} className={classes.korzinaPageDParents}>
                     <div className={classes.korzinaPageDParent}>
-                        <img className={classes.korzinaPageImg} src={item.image} alt={item.image}></img>
+                        <img className={classes.korzinaPageImg} onClick={() => goToOneScreen(item.id)} src={item.image} alt={item.image}></img>
                         <div className={classes.korzinaPageDHP}>
-                            <h2 className={classes.korzinaPageH}>{item.title}</h2>
-                            <p className={classes.korzinaPageP0}>{item.price}₸</p>
+                            <h2 className={classes.korzinaPageH} onClick={() => goToOneScreen(item.id)}>{item.title}</h2>
+                            <p className={classes.korzinaPageP0} onClick={() => goToOneScreen(item.id)}>{item.price}₸</p>
                         </div>
                         <button className={classes.korzinaPageBtn} onClick={() => removeItem(item.id)}>Удалить</button>
                     </div>

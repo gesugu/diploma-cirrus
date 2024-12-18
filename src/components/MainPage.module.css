@@ -78,8 +78,8 @@
     margin-left: 25px;
 }
 .mainPageJpg{
-    width: 75vw;
-    height: 75vh;
+    width: 65vw;
+    height: 65vh;
     border-radius: 40px;
     margin-top: 40px;
     margin-left: 40px;
@@ -332,7 +332,7 @@
     width: 11vw;
     height: 8vh;
     border: none;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 10px 5px 5px gray;
     font-size: 17px;
@@ -421,6 +421,11 @@
     right: 3%;
     position: fixed;
   }
-  /* .mainPageChatInputImgP{
-    display: flex;
-  } */
+  .mainPageBasketBtn{
+    width: 3vw;
+    height: 3vh;
+  }
+  .mainPageHeartBtn{
+    width: 3vw;
+    height: 3vh;
+  }

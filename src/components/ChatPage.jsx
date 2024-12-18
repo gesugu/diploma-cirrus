@@ -10,7 +10,6 @@ function ChatPage() {
   const [chatHistory, setChatHistory] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Инициализация Google Generative AI
   const genAI = new GoogleGenerativeAI("AIzaSyDfExGHYv4q-QZ06-rZNUYboj2a2lKWV1M");
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-flash",

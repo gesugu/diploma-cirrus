@@ -8,6 +8,9 @@ import basket from "../icons/basket.svg"
 import scales from "../icons/scales.svg"
 import cirrus2 from "../icons/cirrus2.jpg"
 import heart from "../icons/heart.svg"
+import cross from "../icons/cross.svg"
+import {filteredProductAction, filteredItemsAction2} from "../store/productReducer"
+import search from "../icons/search.svg"
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -17,10 +20,21 @@ const Header = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [isVisible, setIsVisible] = useState(true);
   const [filteredItems, setFilteredItems] = useState([]);
+  const [isClicked, setIsClicked] = useState(false)
 
   const toggleVisible = () => {
     setIsVisible(!isVisible);
   };
+
+  const goFilter = (type) => { 
+    console.log('фильтр', type);
+    dispatch(filteredItemsAction2(type)); 
+    navigate('/filtered') 
+  }
+
+  const toggleClick = () => {
+    setIsClicked(true)
+  }
 
   const goMain = () => {
     navigate('/')
@@ -50,10 +64,16 @@ const Header = () => {
         <div className={classes.h2Parent3Img}>
           <img className={classes.headerPage2Img} onClick={() => goMain()} src={cirrus2} alt={cirrus2}></img>
           </div>
-          <button className={classes.btnHeader}>
+          {/* <button className={classes.btnHeader}>
             <Link className={classes.btnPHeader} to="/katalog">
               Каталог
             </Link>
+          </button> */}
+          <button className={isClicked ? classes.btnHeaderClicked : classes.btnHeader} onClick={toggleClick}>
+            <Link className={classes.btnPHeader} to="/katalog">
+              Каталог
+            </Link>
+            {isClicked ? <img className={classes.headerBtnImg} src={cross} alt={cross} /> : <img className={classes.headerBtnImg2} src={search} alt={search}></img>}
           </button>
           <input
             className={classes.inputHeader}
@@ -98,13 +118,19 @@ const Header = () => {
           ) : (
             <div>
               {filteredItems.length > 0 ? (
-              filteredItems.map((item, index) => (
+              filteredItems.slice(0,3).map((item, index) => (
                 <div key={index}>
                   <p><Link className={classes.headerPageLinkP} to={`/item2/${item.id}`}>{item.title}</Link></p>
                 </div>
               ))
             ) : (
-              <p>Товары не найдены</p>
+              <div> 
+          {items.filter(item => item.type).slice(0,3).map((item, index) => { 
+            return( 
+                <div key={index} onClick={() => goFilter(item.type)} className={classes.categoryItem}>{item.type}</div> 
+            ) 
+        })} 
+        </div>
             )}
             </div>
           )}

@@ -16,6 +16,11 @@ import ChatHistory from "./ChatHistory";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import MyLoader2 from "../components/UI/loader2/MyLoader2";
 import send from "../icons/send.svg"
+import basket from "../icons/basket.svg"
+import scales from "../icons/scales.svg"
+import cirrus2 from "../icons/cirrus2.jpg"
+import heart from "../icons/heart.svg"
+import cross from "../icons/cross.svg"
 
 const MainPage = () => {
     const dispatch = useDispatch();
@@ -108,6 +113,10 @@ Please respond professionally and visually format the output in Markdown for a b
     setChatHistory([]);
   };
 
+  const goToOneScreen = (item_id) => {
+        navigate(`/item2/${item_id}`)
+    }
+
   const today = new Date()
   const day = today.getDay()+1
   const month = today.getMonth()+1
@@ -117,10 +126,12 @@ Please respond professionally and visually format the output in Markdown for a b
 //         return
 //     }
 //   }
+const clickImg = (img) => {
+    console.log('Clicked image:', img);
+  };
 
     async function getItems() {
         const items = await PostService.getAll()
-        
         setIsLoading(false)
         return dispatch(getItemsAction(items));
     }
@@ -136,11 +147,13 @@ Please respond professionally and visually format the output in Markdown for a b
             <button className={classes.mainPageBtn1}>🔥 TECHNO Распродажа</button>
             <button className={classes.mainPageBtn2}>TECHNO Рассрочка</button>
             <button className={classes.mainPageBtn3}>🔴 LIVE</button>
-            <button className={classes.mainPageBtn4}>Ноутбуки</button>
+            <button className={classes.mainPageBtn4}><Link className={classes.mainPageBtn6P} to="/laptops">Ноутбуки</Link></button>
             <button className={classes.mainPageBtn5}>Подарочные карты</button>
             <button className={classes.mainPageBtn6}><Link className={classes.mainPageBtn6P} to="/smartphones">Смартфоны</Link></button>
             </div>
+            <div className={classes.mainPageSwiperP}>
             <img className={classes.mainPageJpg} src={technodom} alt={technodom} />
+      </div>
             <div className={classes.mainPageDChat1}>
             <div className={classes.mainPageDChat0x} onClick={() => setIsVisible(!isVisible)}>x</div>
             <div className={isVisible ? classes.mainPageDChat2 : classes.mainPageDChat} onClick={() => setIsVisible(!isVisible)}>
@@ -185,10 +198,10 @@ Please respond professionally and visually format the output in Markdown for a b
                                 <div key={index} className={classes.mainPageItems}>
                                 <div className={classes.smartphonesPageMaterialParent}>
                                 <div className={classes.smartphonesPageMaterial}>
-                                <h2 className="material-icons" onClick={() => addToKorzina(item.id)}>download</h2>
+                                <img src={basket} alt={basket} className={classes.mainPageBasketBtn} onClick={() => addToKorzina(item.id)}></img>
                                 </div>
                                 <div className={classes.mainPageMaterialIcon}>
-                                <h2 class="material-icons" onClick={() => addToFavorites(item.id)}>favorite</h2>
+                                <img src={heart} alt={heart} className={classes.mainPageHeartBtn} onClick={() => addToFavorites(item.id)}></img>
                                 </div>
                                 </div>
                                 <img className={classes.mainPageImgItems} src={item.image} alt="image" />

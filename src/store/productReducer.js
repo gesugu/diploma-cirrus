@@ -11,6 +11,8 @@ const defaultState = {
     users: [],
     selectItem2: [],
     compareItem: [],
+    filteredItems2: [],
+    filteredPrice: [],
 }
 
 const ADD_PRODUCT = 'ADD_PRODUCT';
@@ -30,6 +32,8 @@ const REMOVE_ITEM = 'REMOVE_ITEM'
 const REMOVE_ITEM2 = 'REMOVE_ITEM2'
 const COMPARE_ITEM = 'COMPARE_ITEM'
 const REMOVE_ITEM3 = 'REMOVE_ITEM3'
+const FILTERED_ITEMS2 = 'FILTERED_ITEMS2'
+const FILTERED_PRICE = 'FILTERED_PRICE'
 
 export const productReducer = (state = defaultState, action) => {
   switch (action.type) {
@@ -72,6 +76,13 @@ export const productReducer = (state = defaultState, action) => {
           return { ...state, compareItem: [...state.compareItem, ...action.payload] };
       case REMOVE_ITEM3:
           return {...state, compareItem: state.compareItem.filter(item => item.id !== action.payload)}
+      case FILTERED_ITEMS2:
+          return { ...state, filteredItems2: state.items.filter(item => item.type === action.payload) };
+      case FILTERED_PRICE: 
+          return {...state, filteredPrice: state.filteredItems2.filter(item => {
+            const price = Number(item.price)
+            return price >= action.payload.minPrice && price <= action.payload.maxPrice;
+          })};
       default:
           return state;
   }
@@ -95,3 +106,5 @@ export const removeItemAction = payload => ({ type: REMOVE_ITEM, payload });
 export const removeItemAction2 = payload => ({ type: REMOVE_ITEM2, payload });
 export const compareItemAction = payload => ({ type: COMPARE_ITEM, payload });
 export const removeItemAction3 = payload => ({ type: REMOVE_ITEM3, payload });
+export const filteredItemsAction2 = payload => ({ type: FILTERED_ITEMS2, payload });
+export const filteredPriceAction = payload => ({ type: FILTERED_PRICE, payload });

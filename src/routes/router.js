@@ -7,6 +7,9 @@ import Smartphones from "../components/Smartphones"
 import ItemOneScreen from "../components/ItemOneScreen";
 import ItemOneScreenInfo from "../components/ItemOneScreenInfo";
 import ChatPage from "../components/ChatPage";
+import RegistrationPage from "../components/RegistrationPage";
+import FilteredPage from "../components/FilteredPage"
+import Laptops from "../components/Laptops"
 
 export const routes = [
     {path: '/', element: <MainPage/>},
@@ -20,4 +23,7 @@ export const routes = [
     {path: '/favorites', element: <FavoritesPage/>},
     {path: '/chat', element: <ChatPage/>},
     {path: '/compare/:item3_id', element: <ComparePage/>},
+    {path: '/register', element: <RegistrationPage/>},
+    {path: '/filtered', element: <FilteredPage/>},
+    {path: '/laptops', element: <Laptops/>},
 ]

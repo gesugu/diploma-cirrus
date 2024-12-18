@@ -327,3 +327,163 @@
     padding-top: 30px;
     margin-top: 30px;
 }
+
+
+.comparePageD {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.comparePageDP {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 24px 0;
+}
+
+.korzinaPageD2Parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 24px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.korzinaPageDParent {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.korzinaPageImg {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.korzinaPageDHP {
+    flex: 1;
+    margin: 0;
+}
+
+.korzinaPageH {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.korzinaPageP0 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 16px 0;
+}
+
+.korzinaPageBtn {
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    transition: background-color 0.2s;
+}
+
+.korzinaPageBtn:hover {
+    background-color: #0073e6;
+}
+
+.comparePageT {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.comparePageT:hover {
+    opacity: 1;
+}
+
+.comparePageHT {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.KorzinaPageDT {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.comparePagePP {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin: 0 0 16px 0;
+}
+
+.comparePage2DPP {
+    margin: 24px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.comparePageDP2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.comparePageDP3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 24px 0;
+}
+
+.comparePage2D {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.comparePage3DP {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.comparePage3D{
+    margin-top: 45px;
+}

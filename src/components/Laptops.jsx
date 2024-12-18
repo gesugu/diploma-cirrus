@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react"
-import classes from "./Smartphones.module.css"
+import classes from "./Laptops.module.css"
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import MyLoader2 from '../components/UI/loader2/MyLoader2';
 import {getItemsAction, selectItemAction, selectItemAction2} from "../store/productReducer"
 import PostService from '../API/PostService';
 
-const Smartphones = () => {
+const Laptops = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(true)
@@ -65,7 +65,7 @@ const Smartphones = () => {
             <button className={classes.mainPageBtn6}><Link className={classes.mainPageBtn6P} to="/smartphones">Смартфоны</Link></button>
             </div>
                 <div className={classes.mainPageItemsP}>
-                    {items.filter(item => item.type === 'smartphone').map((item, index) => {
+                    {items.filter(item => item.type === 'notebook').map((item, index) => {
                         return(
                             <div key={index} className={classes.mainPageItems}>
                                 <div className={classes.smartphonesPageMaterialParent}>
@@ -93,4 +93,4 @@ const Smartphones = () => {
     )
 }
 
-export default Smartphones
+export default Laptops

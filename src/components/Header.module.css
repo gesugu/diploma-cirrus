@@ -124,3 +124,23 @@
     margin-bottom: 20px;
     margin-left: 10px;
 }
+
+.btnHeaderClicked {
+    width: 9vw;
+    height: 6vh;
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+.headerBtnImg {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+.headerBtnImg2{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+ }
