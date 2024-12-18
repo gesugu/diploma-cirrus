@@ -126,23 +126,23 @@ const SearchResults = () => {
             <div className={classes.mainPageItemsP}>
             {filteredItems.slice(0,10).map((item, index) => {
             return(
-                <div key={index} className={classes.mainPageItems}>
-                                <div className={classes.smartphonesPageMaterialParent}>
-                                <div className={classes.smartphonesPageMaterial}>
-                                <img src={scales} className={classes.scales} alt={scales} onClick={() => addToKorzina(item.id)}></img>
-                                </div>
-                                <div className={classes.mainPageMaterialIcon}>
-                                <img src={heart} className={classes.heart} alt={heart} onClick={() => addToFavorites(item.id)}></img>
-                                </div>
-                                </div>
-                                <img className={classes.mainPageImgItems} src={item.image} alt="image" />
-                                <p className={classes.mainPagePObogrevatel}>{item.title}</p>
-                                <p className={classes.mainPageP1Obogrevatel}>{item.price}₸</p>
-                                <div className={classes.mainPageBtnsParent}>
-                                <button className={classes.mainPageBtnObogrevatel} onClick={() => getItemById(item.id)}>Купить</button>
-                                <button className={classes.mainPageBtnObogrevatel} onClick={moveToFavoritesPage}>Избранные</button>
-                                </div>
-                            </div>
+              <div key={index} className={classes.mainPageItems}>
+              <div className={classes.smartphonesPageMaterialParent}>
+              <div className={classes.smartphonesPageMaterial}>
+              <img src={basket} alt={basket} className={classes.mainPageBasketBtn} onClick={() => addToKorzina(item.id)}></img>
+              </div>
+              <div className={classes.mainPageMaterialIcon}>
+              <img src={heart} alt={heart} className={classes.mainPageHeartBtn} onClick={() => addToFavorites(item.id)}></img>
+              </div>
+              </div>
+              <img className={classes.mainPageImgItems} src={item.image} alt="image" />
+              <p className={classes.mainPagePObogrevatel}>{item.title}</p>
+              <p className={classes.mainPageP1Obogrevatel}>{item.price}₸</p>
+              <div className={classes.mainPageBtnsParent}>
+              <button className={classes.mainPageBtnObogrevatel} onClick={() => getItemById(item.id)}>Купить</button>
+              <button className={classes.mainPageBtnObogrevatel} onClick={moveToFavoritesPage}>Избранные</button>
+              </div>
+          </div>
             )
         })}
             </div>

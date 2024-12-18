@@ -5,6 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import MyLoader2 from '../components/UI/loader2/MyLoader2';
 import {getItemsAction, selectItemAction, selectItemAction2} from "../store/productReducer"
 import PostService from '../API/PostService';
+import send from "../icons/send.svg"
+import basket from "../icons/basket.svg"
+import scales from "../icons/scales.svg"
+import cirrus2 from "../icons/cirrus2.jpg"
+import heart from "../icons/heart.svg"
+import cross from "../icons/cross.svg"
 
 const Laptops = () => {
     const dispatch = useDispatch();
@@ -70,10 +76,10 @@ const Laptops = () => {
                             <div key={index} className={classes.mainPageItems}>
                                 <div className={classes.smartphonesPageMaterialParent}>
                                 <div className={classes.smartphonesPageMaterial}>
-                                <h2 className="material-icons" onClick={() => addToKorzina(item.id)}>download</h2>
+                                <img src={basket} alt={basket} className={classes.mainPageBasketBtn} onClick={() => addToKorzina(item.id)}></img>
                                 </div>
                                 <div className={classes.mainPageMaterialIcon}>
-                                <h2 class="material-icons" onClick={() => addToFavorites(item.id)}>favorite</h2>
+                                <img src={heart} alt={heart} className={classes.mainPageHeartBtn} onClick={() => addToFavorites(item.id)}></img>
                                 </div>
                                 </div>
                                 <img className={classes.mainPageImgItems} src={item.image} alt="image" />

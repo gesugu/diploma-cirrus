@@ -131,3 +131,11 @@
     margin-top: 20px;
     margin-left: 25px;
 }
+.mainPageBasketBtn{
+    width: 3vw;
+    height: 3vh;
+  }
+  .mainPageHeartBtn{
+    width: 3vw;
+    height: 3vh;
+  }
