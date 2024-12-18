@@ -32,11 +32,9 @@ Please respond professionally and visually format the output in Markdown for a b
 
     setIsLoading(true);
     try {
-      // Генерация ответа от модели
       const result = await model.generateContent(userInput);
       const response = await result.response;
 
-      // Обновление истории чата
       setChatHistory([
         ...chatHistory,
         { type: "user", message: userInput },
